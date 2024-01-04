@@ -3,7 +3,7 @@ import './Post.css'
 
 export default function Post({props}){
     return(
-        <article>
+        <article className='post'>
             <h2>{props.title}</h2>
             <p>{props.content}</p>
         </article>
