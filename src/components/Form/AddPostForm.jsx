@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import './AddPostForm.css'
 
 import { postAdded } from "../../features/posts/postsSlice";
 
@@ -24,9 +25,9 @@ export default function AddPostForm() {
   };
 
   return (
-    <section>
+    <section className="postFormWrapper">
       <h2>Add a New Post</h2>
-      <form>
+      <form className="postForm"> 
         <label htmlFor="postTitle">Post Title:</label>
         <input
           type="text"
@@ -36,7 +37,7 @@ export default function AddPostForm() {
           id="postTitle"
         />
         <label htmlFor="postContent">Post Content:</label>
-        <input
+        <textarea
           type="text"
           name="postContent"
           value={content}
