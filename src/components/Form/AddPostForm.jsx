@@ -1,13 +1,17 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import './AddPostForm.css'
 
 import { postAdded } from "../../features/posts/postsSlice";
+import {selectedAllUsers } from "../../features/user"
 
 export default function AddPostForm() {
   const dispatch = useDispatch();
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const [userId, setUserId] = useState("");
+  
+  const users = useSelector(selectedAllUsers)
 
   const handleTitleChanged = function (event) {
     setTitle(event.target.value);
