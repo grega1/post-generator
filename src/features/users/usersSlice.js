@@ -3,11 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = [
   {
     id: "1",
-    name: "Adriano",
+    name: "Sigmund Freud",
   },
   {
     id: "2",
-    name: "Grego",
+    name: "Michael Foucault",
   },
 ];
 

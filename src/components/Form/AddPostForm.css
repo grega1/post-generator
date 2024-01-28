@@ -1,5 +1,5 @@
 .postFormWrapper{
-    width: 25rem;
+    width: 29rem;
     height: auto;
 
 }
@@ -10,7 +10,7 @@
     height: 15rem;
 }
 .postForm :nth-child(2n){
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 .postForm textarea{
     height: 3rem;
@@ -19,11 +19,39 @@
     color:white;
     background-color: #222;
     border: 1px solid white;
-    height: 2rem;
-    border-radius: 2px;
+    height: 2.5rem;
+    border-radius: 8px;
+    width: 7rem;
+    font-size:1rem;
+    font-weight: 400;
+    margin-top: 12px;
 
 }
 
 .postForm select option{
     color:#222;
+}
+#postAuthor{
+    width: 10rem;
+    height:2rem;
+    text-align: center;
+}
+#postTitle{
+    height: 1.5rem;
+    border-radius: 4px;
+    border: 1px solid #222;
+    margin-top:4px;
+
+}
+#postContent{
+    height: 5rem;
+}
+.formSubmit > div{
+    display: flex;
+    flex-direction: column;
+}
+.formSubmit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

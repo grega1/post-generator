@@ -24,8 +24,8 @@ export default function Post({props}){
         <article className='post'>
             <h2>{props.title}</h2>
             <p>{props.content}</p>
-            <p><span> by{author ? author.name : " Unknow author"}</span><span title={props.date}>{timeAgo}</span> </p>
-            <button type='button' onClick={()=>dispatch(addLike({postId:props.id}))}>❤️{props.like}</button>
+            <p className='postInfo'><span> by{author ? author.name : " Unknow author"}</span><span title={props.date}>{timeAgo}</span> </p>
+            <button type='button' onClick={()=>dispatch(addLike({postId:props.id}))}>❤️ {!props.like ? "" : props.like}</button>
         </article>
     )
 }
