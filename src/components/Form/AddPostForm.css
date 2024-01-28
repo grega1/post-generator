@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 10rem;
+    height: 15rem;
 }
 .postForm :nth-child(2n){
     margin-bottom:15px;
@@ -22,4 +22,8 @@
     height: 2rem;
     border-radius: 2px;
 
+}
+
+.postForm select option{
+    color:#222;
 }
